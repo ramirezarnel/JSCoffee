@@ -1,0 +1,79 @@
+body {
+ 
+    font-family: Rubik, Arial;
+}
+
+h1 {
+    text-align: center;
+    background-color:#6E2C00;
+    color: #FBEEE6;
+    height: 45px; 
+    position: relative;
+}
+
+#main{
+    width: 60%;
+    margin: 3% auto;
+    height: 550px;
+    background-color:#6E2C00;
+    color: #FBEEE6;
+    border-radius: 40px; 
+}
+
+section {
+    margin: auto;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+#priceS {
+    position: relative;
+    margin-left: 45px;
+
+}
+#priceM {
+    position: relative;
+    margin-left: 15px;
+
+}
+#priceL {
+    position: relative;
+    margin-left: 33px;
+}
+
+#noOrder {
+    width: 100px;
+    position: relative;
+    margin-left: 34px;
+}
+
+#priceOfCoffee {
+    position: relative;
+    margin-left: 20px;
+}
+
+#payment {
+    position: relative;
+    margin-left: 14px;
+    width: 100px;
+}
+
+#change {
+    position: relative;
+    margin-left: 30px;
+    width: 100px;
+}
+
+#cPrice {
+    position: relative;
+    margin-left: 70px;
+}
+
+#w1,#w2,#w3,#w4,#w5 {
+    font-size: 12px;
+    position: relative;
+    margin-left: 21px;
+    margin-right: 25px;
+    text-align: justify;
+}
+

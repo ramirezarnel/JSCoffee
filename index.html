@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <title>Coffee</title>
+      <script src="js/jsFunction.js"></script>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="js/jQueryFunction.js"></script>
+   </head>
+
+   <body>
+
+      <header>
+         <h1 id="head">Get Coffee</h1>
+      </header>
+      
+      <main id="main">
+
+         <section class="selectCoffee">
+
+            
+
+            <br><label for="whey">Choose Your Coffee</label></br></br>
+
+            <input type="radio"  name="wheys" id="wh1" onclick="getPrice();" value="Whey1">Brewed Coffee<br>
+            <p style="display: none" id="w1">Brewed coffee is made by pouring hot water onto ground coffee beans, then allowing to brew.</p>
+            
+            <input type="radio"  name="wheys" id="wh2" onclick="getPrice();" value="Whey2">French Vanilla<br>
+            <p style="display: none" id="w2">It is a little known fact that French Vanilla is not a vanilla flavor at all, but a term used to describe the French method of making ice cream using egg yolks, cream, and vanilla pods.</p>
+
+            <input type="radio"  name="wheys" id="wh3" onclick="getPrice();" value="Whey3">Caramel Macchiato<br>
+            <p style="display: none" id="w3">The delicious, multi-layered Macchiato begins with milk steamed until it's stretched and smooth to bring out its natural sweetness and is topped by a dense, creamy foam. Then rich espresso is poured over and through the foam, where it mixes with the milk and creates a brown mark on top.</p>
+
+            <input type="radio"  name="wheys" id="wh4" onclick="getPrice();" value="Whey4">Pumpkin Spice<br>
+            <p style="display: none" id="w4">.is a coffee drink made with a mix of traditional fall spice flavors (cinnamon, nutmeg and clove), steamed milk, espresso, and often sugar, topped with whipped cream and pumpkin pie spice.</p>
+
+            <input type="radio"  name="wheys" id="wh5" onclick="getPrice();" value="Whey5">Mocha Frappuccino<br>
+            <p style="display: none" id="w5">roast coffee, milk and ice all come together for a mocha flavor that'll leave you wanting more. To change things up, try it Affogato-style by adding an Affogato-style shot: a hot espresso shot poured right over the top.</p>
+
+         </section>
+         
+         <section class="selectSize">
+            
+            <label>Size</label>
+            <label id="cPrice">Price</label>
+            
+
+            <br><br><input type="radio" id="selectSmall" name="rd">
+            <label>Tall</label>
+            <input type="text" id="priceS" size="3px" disabled><br>
+
+            <input type="radio" id="selecMedium" name="rd">
+            <label>Grande</label>
+            <input type="text" id="priceM" size="3px" disabled><br>
+
+            
+            <input type="radio" id="selectLarge" name="rd">
+            <label>Venti</label>
+            <input type="text" id="priceL" size="3px" disabled><br><br>
+
+            <label>Quantity<label>
+            <input type="number" size="5px" name="noOrder" id="noOrder">
+
+            <input type="button" value="Compute" onclick="computePrice()">
+
+         </section>
+
+         <section class="coffeePayment"> 
+
+            <label>Total Price<label></label>
+            <input type="text" id="priceOfCoffee" size="10px" disabled><br><br>
+
+            <label>Enter Payment<label>
+            <input type="text"  id="payment" value="" ></input>
+
+            <input type="button" value="Proceed" id="proceed" onclick="result()"><br>
+
+            <label>Change Due<label>
+            <input type="text" id="change" disabled></input><br>
+
+         </section>
+  
+      </main>
+
+      <footer>
+      </footer>
+
+   </body>
+</html>
+
+
